@@ -33,7 +33,7 @@
 			});
 			
 			$('img[src^="https://"]').each(function(){ 
-			var coba2 = $(this).attr("src").replace("/s1600/","/s200-cc-rw/");
+			var coba2 = $(this).attr("src").replace("/s0/","/s200-cc-rw/").replace("/s1600/","/s200-cc-rw/").replace("/s16000/","/s200-cc-rw/");
 			$(this).attr("src", coba2+"=s200-cc-rw"); 
 		
 			});
