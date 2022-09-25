@@ -20,7 +20,7 @@
 		var tiukont = document.getElementById('teaserImage').innerHTML;
 		var postkon = ""+
 					"<a class='thumbx' href='#' title=' "+titkont+"' target='_blank'>"+
-					"<img data-src='"+tiukont+"' alt=' "+titkont+"' class='post-thumbnail lazy' src='"+tiukont+"'> "+
+					""+tiukont+
 					"</a>";
 		document.getElementById('FeaturedHeader').innerHTML = postkon;
 	
@@ -33,7 +33,7 @@
 			});
 			
 			$('img[src^="https://"]').each(function(){ 
-			var coba2 = $(this).attr("src");
+			var coba2 = $(this).attr("src").replace("1600","=s200-cc-rw");
 			$(this).attr("src", coba2+"=s200-cc-rw"); 
 		
 			});
