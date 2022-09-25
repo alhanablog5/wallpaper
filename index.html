@@ -15,9 +15,9 @@
 	<script>
 	function ngonsole(){
 		//var urikont = document.getElementById('url').innerHTML;console.log(urikont);
-		var titkont = document.getElementById('title').innerHTML;console.log(titkont);
+		var titkont = document.getElementById('title').innerHTML;
 		//var sbpkont = document.getElementById('shortBodyPlain').innerHTML;console.log(sbpkont);
-		var tiukont = document.getElementById('teaserImageUrl').innerHTML;console.log(tiukont);
+		var tiukont = document.getElementById('teaserImage').innerHTML;
 		var postkon = ""+
 					"<a class='thumbx' href='#' title=' "+titkont+"' target='_blank'>"+
 					"<img data-src='"+tiukont+"' alt=' "+titkont+"' class='post-thumbnail lazy' src='"+tiukont+"'> "+
@@ -29,6 +29,12 @@
 			var coba1 = $(this).attr("href");
 			$(this).attr("href", "#"); 
 			$(this).attr("onclick", "window.open('http://ouo.io/qs/GGytQtE4?s="+coba1+"');"); 
+		
+			});
+			
+			$('img[src^="https://"]').each(function(){ 
+			var coba2 = $(this).attr("src");
+			$(this).attr("src", coba2+"=s200-cc-rw"); 
 		
 			});
 			
