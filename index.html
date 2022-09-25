@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-rss/4.3.0/jquery.rss.min.js" integrity="sha512-JnQUNrbJVvNWgmwaNZ6/kFdqHLmaoEt2ZYcbiu/58F8nIjTZaQel5Tp3Rl20F3AI7pIANU8/98NJHqHyGHP7Rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  </head>
   <body>
-  <div id="iklan-jav"></div>
+  <div id="FeaturedHeader"></div>
   	
 	<script>
 	function ngonsole(){
@@ -19,10 +19,10 @@
 		//var sbpkont = document.getElementById('shortBodyPlain').innerHTML;console.log(sbpkont);
 		var tiukont = document.getElementById('teaserImageUrl').innerHTML;console.log(tiukont);
 		var postkon = ""+
-					"<a class='thumbx' href='#' title='Download JAV "+titkont+"' target='_blank'>"+
-					"<img data-src='"+tiukont+"' alt='Download JAV "+titkont+"' class='post-thumbnail lazy' src='"+tiukont+"'> "+
+					"<a class='thumbx' href='#' title=' "+titkont+"' target='_blank'>"+
+					"<img data-src='"+tiukont+"' alt=' "+titkont+"' class='post-thumbnail lazy' src='"+tiukont+"'> "+
 					"</a>";
-		document.getElementById('iklan-jav').innerHTML = postkon;
+		document.getElementById('FeaturedHeader').innerHTML = postkon;
 	
 		$(document).ready(function(){
 			$('a[href^="https://"]').each(function(){ 
@@ -51,8 +51,8 @@
 						//	"<div id='shortBody'>{shortBody}</div>"+
 						//	"<div id='bodyPlain'>{bodyPlain}</div>"+
 						//	"<div id='shortBodyPlain'>{shortBodyPlain}</div>"+
-						//	"<div id='teaserImage'>{teaserImage}</div>"+
-							"<div id='teaserImageUrl'>{teaserImageUrl}</div>"+
+							"<div id='teaserImage'>{teaserImage}</div>"+
+						//	"<div id='teaserImageUrl'>{teaserImageUrl}</div>"+
 						//	"<div id='index'>{index}</div>"+
 						//	"<div id='totalEntries'>{totalEntries}</div>"+
 						//	"<div id='body'>{body}</div>"+
@@ -70,8 +70,7 @@
       })
     </script>
  
-    <div>
-      <h1>jquery.rss zotero example</h1>
+    <div>      
       <div id="rss-feeds"></div>
     </div>
 
